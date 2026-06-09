@@ -72,7 +72,25 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        extra_1 { status = "reserved"; };
+        extra_1 {
+            // ------------------------------------------------------------------------------------------------------------
+            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
+            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
+            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
+            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
+            //                     |      |      |      |        |  |       |      |       |       |
+
+            display-name = "Raise";
+            bindings = <
+&kp F12  &kp F1    &kp F2 &kp F3 &kp F4  &kp F5                                                  &kp F6       &kp F7    &kp F8 &kp F9 &kp F10   &kp F11
+&trans     &trans            &trans      &trans      &trans                &trans                                                               &trans     &trans            &trans      &trans      &trans                &trans
+&trans     &trans            &trans      &trans      &trans                &trans                                                            &trans     &trans            &trans      &trans      &trans                &trans
+&trans     &trans            &trans      &trans      &trans                &trans                &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans     &trans            &trans      &trans      &trans                &trans
+                                         &trans      &trans                &trans                 &trans                  &trans                 &trans       &trans        &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
 
         extra_2 { status = "reserved"; };
 
