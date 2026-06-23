@@ -42,8 +42,8 @@
 
             display-name = "Lower";
             bindings = <
-&kp GRAVE   &kp C_PLAY_PAUSE  &kp C_PREV  &kp C_NEXT  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC                                                 &trans     &trans        &trans           &trans        &kp MINUS   &kp EQUAL
-&trans      &trans            &trans      &kp UP      &trans                &trans                                                               &trans     &kp C_VOL_DN  &trans           &kp C_VOL_UP  &kp C_MUTE  &trans
+&kp GRAVE   &trans            &trans      &trans     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC                                                 &trans     &trans        &trans           &trans        &kp MINUS   &kp EQUAL
+&trans      &kp C_PLAY_PAUSE  &kp C_PREV  &kp UP      &kp C_NEXT            &trans                                                               &trans     &kp C_VOL_DN  &trans           &kp C_VOL_UP  &kp C_MUTE  &trans
 &trans      &trans            &kp LEFT    &kp DOWN    &kp RIGHT             &kp PRCNT                                                            &kp CARET  &kp AMPS      &kp KP_MULTIPLY  &kp LPAR      &kp RPAR    &kp UNDER
 &bt BT_CLR  &bt BT_SEL 0      &trans      &trans      &trans                &trans                &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans     &kp MINUS     &kp KP_PLUS      &kp LBRC      &kp RBRC    &trans
                                           &trans      &trans                &trans                &trans                  &trans                 &mo 3      &trans        &trans
@@ -62,8 +62,8 @@
 
             display-name = "Raise";
             bindings = <
-&kp GRAVE  &kp C_PLAY_PAUSE  &kp C_PREV  &kp C_NEXT  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC                                                 &trans       &trans        &trans     &trans        &kp MINUS   &kp EQUAL
-&trans     &trans            &trans      &trans      &trans                &trans                                                               &trans       &kp C_VOL_DN  &kp UP     &kp C_VOL_UP  &kp C_MUTE  &trans
+&kp GRAVE   &trans            &trans      &trans     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC                                                 &trans     &trans        &trans           &trans        &kp MINUS   &kp EQUAL
+&trans      &kp C_PLAY_PAUSE  &kp C_PREV  &trans      &kp C_NEXT            &trans                                                               &trans       &kp C_VOL_DN  &kp UP     &kp C_VOL_UP  &kp C_MUTE  &trans
 &trans     &kp EXCL          &kp AT      &kp HASH    &kp DOLLAR            &kp PRCNT                                                            &trans       &kp LEFT      &kp DOWN   &kp RIGHT     &trans      &trans
 &trans     &trans            &trans      &trans      &trans                &trans                &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp KP_PLUS  &kp MINUS     &kp EQUAL  &kp LBKT      &kp RBKT    &trans
                                          &trans      &trans                &mo 3                 &trans                  &trans                 &trans       &trans        &trans
